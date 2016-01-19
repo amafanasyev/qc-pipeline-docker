@@ -1,11 +1,14 @@
 # Base QC pipeline image
 
 This repository contains a Dockerfile to create a Docker image with QC pipeline tools:
-* standalone command-line version of **Torrent Variant Caller (TVC)** 4.4.3
-* **SeqUtils** v.0.2
-* and **samtools** v.1.2
+
+* standalone command-line version of __Torrent Variant Caller (TVC)__ 4.4.3
+* __SeqUtils__ v.0.2
+* and __samtools__ v.1.2
 
 Tools are wrapped by the pipeline script ``qc_pipeline.py`` being an entrypoint for the image. It implements basic strand coverage and variant calling.
+
+You can pull already builded docker image [here](https://hub.docker.com/r/aafanasyev/qc-pipeline/) from Docker Hub.
 
 ### Building an image
 From directory with Dockerfile run command:
